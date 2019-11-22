@@ -75,7 +75,7 @@ variable "service_account" {
 variable "use_ip_aliases" {
   type = bool
   description = "Whether or not to enable Alias IPs in the GKE cluster. If true, a VPC-native cluster is created."
-  default = null
+  default = true
 }
 
 variable "cluster_secondary_range_name" {
