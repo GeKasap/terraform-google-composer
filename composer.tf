@@ -14,6 +14,7 @@ resource "google_composer_environment" "composer_env" {
       disk_size_gb = var.disk_size_gb
       oauth_scopes = var.oath_scopes
       ip_allocation_policy {
+        use_ip_aliases = var.use_ip_aliases
         cluster_secondary_range_name = var.cluster_secondary_range_name
         services_secondary_range_name = var.services_secondary_range_name
         cluster_ipv4_cidr_block = var.cluster_ipv4_cidr_block
