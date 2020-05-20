@@ -79,7 +79,7 @@ variable "use_ip_aliases" {
 }
 
 variable "cluster_secondary_range_name" {
-  type = bool
+  type = string 
   description = "The name of the cluster's secondary range used to allocate IP addresses to pods. Specify either cluster_secondary_range_name or cluster_ipv4_cidr_block but not both. This field is applicable only when use_ip_aliases is true."
   default = null
 }
